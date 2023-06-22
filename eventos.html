@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Para usar los íconos "Font Awesome"  --> 
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <title>El Refugio de los Libros</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="logo">El Refugio de los Libros</a>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">Volver al Inicio</a>
+    </nav>
+</header>
+<body style="background: url(images/firma_libros.jpg)">
+    <main>
+        <section class="background" id="">
+            <!-- Titulo -->
+            <h1>Presentación de Libros de Autores Argentinos</h1>
+            <!-- Introduccion -->
+            <div class="content-1">
+                <p>El próximo 7 de Julio 2023 en ‘El Refugio de los Libros’ contaremos con la presencia de reconocidos autores argentinos donde se llevará a cabo la presentación de libros y la firma de los mismos.
+                    <br>
+                    Para todas aquellas personas que deseen asistir deberán completar los siguientes datos.</p>
+            </div>
+            <br>
+            <form action="" class="formulario" id="formulario">            
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre no puede contener números o símbolos.</p>
+                </div>
+
+                <!-- Grupo: Apellido -->
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El apellido no puede contener números o símbolos.</p>
+                </div>
+
+                <!-- Grupo: Cuidad -->
+                <div class="formulario__grupo" id="grupo__ciudad">
+                    <label for="ciudad" class="formulario__label">Ciudad</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Ingrese su ciudad">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La ciudad no puede contener números o símbolos.</p>
+                </div>
+    
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+                </div>
+    
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
+                </div>
+
+                <!-- Grupo: Autores -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <h3>Seleccione los autores que desea ver:</h3>
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Guillermo Martinez
+                    </label>
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Norma Huidobro
+                    </label>
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Antonio Santa Ana
+                    </label>
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Jorge Bucay
+                    </label>
+                </div>
+    
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Términos y Condiciones
+                    </label>
+                </div>
+    
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </form>
+        </section>
+		
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <!-- Footer -->
+    <div class="container grid-3">
+        <div>
+            <p><a href="index.html">El Refugio de los Libros</a></p>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023</p>
+        </div>
+        <div class="profiles">
+            <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+            <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+            <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+            <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+        </div>
+    </div>
+</footer>
+</html>
